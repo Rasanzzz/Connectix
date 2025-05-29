@@ -1,0 +1,53 @@
+
+/******* Connectix Logistics Bootstrap Theme ********/
+
+$primary: #29B5F6;
+$secondary: #1F1F1F;
+$light: #F5F7F9;
+$dark: #1F1F1F;
+
+$font-family-base: 'Montserrat', sans-serif;
+$headings-font-family: 'Montserrat', sans-serif;
+
+$body-color: #FFFFFF;
+$headings-color: #FFFFFF;
+
+$headings-font-weight: 700;
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+$border-radius: 0px;
+$link-decoration: none;
+$enable-negative-margins: true;
+
+// Custom components theme
+body {
+  background-color: $dark;
+  color: $body-color;
+  font-family: $font-family-base;
+}
+
+.navbar {
+  background-color: $secondary;
+  .navbar-brand, .nav-link {
+    color: $primary !important;
+    font-weight: 600;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 12%);
+  }
+}
+
+.card {
+  background-color: #22282b;
+  color: #FFFFFF;
+  border: 1px solid #3A3A3A;
+}
+
+@import "bootstrap/scss/bootstrap";
